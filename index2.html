@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>NovaTech Solutions | Software & Automatización</title>
+
+    <!-- Framework CSS: Bootstrap 5 (SOLO CSS, sin JS de Bootstrap) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilo general del body */
+        body {
+            scroll-behavior: smooth; /* Hace que el scroll sea suave */
+        }
+
+        /* Sección principal (Hero) */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #0d6efd, #0a1f44);
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Tarjetas de servicios */
+        .service-card {
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto hover para las tarjetas */
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a1f44;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Botón personalizado */
+        .btn-custom {
+            background-color: white;
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+        .btn-custom:hover {
+            background-color: #e2e6ea;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<!-- Barra de navegación principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <!-- Nombre de la empresa -->
+        <a class="navbar-brand" href="#">NovaTech</a>
+
+        <!-- Botón responsive para móviles -->
+        <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<!-- Sección principal de presentación -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Transformamos ideas en soluciones digitales</h1>
+        <p class="lead mt-3">Software, automatización e inteligencia artificial para potenciar tu negocio.</p>
+        <a href="#contacto" class="btn btn-custom mt-4">Solicitar Consultoría</a>
+    </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<!-- Sección donde se muestran los servicios -->
+<section id="servicios" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+
+        <div class="row g-4">
+
+            <!-- Automatizaciones -->
+            <div class="col-md-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Automatizaciones</h5>
+                        <p class="card-text">
+                            Automatizamos procesos empresariales con herramientas especializadas,
+                            incluyendo integraciones con n8n y automatización web con Selenium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bots -->
+            <div class="col-md-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Bots Inteligentes</h5>
+                        <p class="card-text">
+                            Desarrollo de bots para atención al cliente, ventas,
+                            gestión de datos y automatización de tareas repetitivas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Páginas Web -->
+            <div class="col-md-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Páginas Web</h5>
+                        <p class="card-text">
+                            Diseño y desarrollo de sitios web modernos,
+                            optimizados y adaptables a cualquier dispositivo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicaciones de escritorio -->
+            <div class="col-md-6">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Aplicaciones de Escritorio</h5>
+                        <p class="card-text">
+                            Desarrollo de aplicaciones empresariales robustas
+                            para optimizar procesos internos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inteligencia Artificial -->
+            <div class="col-md-6">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Inteligencia Artificial</h5>
+                        <p class="card-text">
+                            Implementamos soluciones basadas en IA para análisis de datos,
+                            predicciones y automatización inteligente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section id="nosotros" class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Sobre Nosotros</h2>
+        <p class="mt-3">
+            Somos una Start Up enfocada en transformar procesos empresariales mediante
+            soluciones tecnológicas innovadoras. Ayudamos a empresas a crecer
+            a través de la automatización y la inteligencia artificial.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+
+        <!-- Formulario de contacto -->
+        <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    © 2026 NovaTech Solutions - Todos los derechos reservados
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+    // Función para abrir y cerrar el menú en dispositivos móviles
+    function toggleMenu() {
+        const menu = document.getElementById("navbarMenu");
+        menu.classList.toggle("show");
+    }
+
+    // Evento para capturar el envío del formulario
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        
+        // Evita que la página se recargue
+        event.preventDefault();
+
+        // Muestra una alerta simulando envío exitoso
+        alert("Gracias por contactarnos. Te responderemos pronto.");
+
+        // Reinicia el formulario
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
