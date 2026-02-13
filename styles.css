@@ -1,14 +1,11 @@
-/* Animación suave para el scroll */
 html {
     scroll-behavior: smooth;
 }
 
-/* Gradiente personalizado para el hero */
 .hero-gradient {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-/* Animación de fade-in para elementos */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -20,7 +17,6 @@ html {
     transform: translateY(0);
 }
 
-/* Efecto hover para las tarjetas de servicios */
 .service-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -30,7 +26,6 @@ html {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* Animación del menú móvil */
 .mobile-menu {
     max-height: 0;
     overflow: hidden;
@@ -41,7 +36,6 @@ html {
     max-height: 500px;
 }
 
-/* Efecto de onda en los botones */
 .btn-ripple {
     position: relative;
     overflow: hidden;

@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allianz - Servicios de Software e IA</title>
     
-    <!-- Framework CSS: Tailwind CSS vía CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     
 </head>
 <body class="font-sans text-gray-800">
     
-    <!-- Barra de navegación -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <!-- Logo y nombre de la empresa -->
                 <div class="flex items-center space-x-2">
                     <!--
                     <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
@@ -26,7 +23,6 @@
                     <span class="text-2xl font-bold text-purple-600">Allianz</span>
                 </div>
                 
-                <!-- Menú de navegación para desktop -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#inicio" class="text-gray-700 hover:text-purple-600 transition">Inicio</a>
                     <a href="#servicios" class="text-gray-700 hover:text-purple-600 transition">Servicios</a>
@@ -34,7 +30,6 @@
                     <a href="#contacto" class="text-gray-700 hover:text-purple-600 transition">Contacto</a>
                 </div>
                 
-                <!-- Botón de menú móvil -->
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -42,7 +37,6 @@
                 </button>
             </div>
             
-            <!-- Menú móvil desplegable -->
             <div id="mobile-menu" class="mobile-menu md:hidden mt-4">
                 <a href="#inicio" class="block py-2 text-gray-700 hover:text-purple-600 transition">Inicio</a>
                 <a href="#servicios" class="block py-2 text-gray-700 hover:text-purple-600 transition">Servicios</a>
@@ -52,11 +46,9 @@
         </div>
     </nav>
     
-    <!-- Sección Hero (Inicio) -->
     <section id="inicio" class="hero-gradient text-white pt-32 pb-20">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
-                <!-- Contenido del hero -->
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in">
                         Transformamos Ideas en Soluciones Digitales
@@ -74,7 +66,6 @@
                     </div>
                 </div>
                 
-                <!-- Ilustración del hero -->
                 <div class="md:w-1/2 flex justify-center fade-in">
                     <svg class="w-full max-w-lg" viewBox="0 0 500 400" fill="none">
                         <rect x="50" y="50" width="400" height="300" rx="10" fill="white" opacity="0.1"/>
@@ -89,19 +80,15 @@
         </div>
     </section>
     
-    <!-- Sección de Servicios -->
     <section id="servicios" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <!-- Título de la sección -->
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4 fade-in">Nuestros Servicios</h2>
                 <p class="text-xl text-gray-600 fade-in">Soluciones tecnológicas a medida para tu empresa</p>
             </div>
             
-            <!-- Grid de tarjetas de servicios -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Tarjeta: Automatizaciones -->
                 <div class="service-card bg-white rounded-lg shadow-lg p-8 fade-in">
                     <div class="text-purple-600 mb-4">
                         <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
@@ -115,20 +102,19 @@
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Automatización de flujos de trabajo
+                            Automatización de flujos de trabajo.
                         </li>
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Integración de sistemas
+                            Integración de sistemas.
                         </li>
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Bots personalizados
+                            Bots personalizados.
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Tarjeta: Páginas Web -->
                 <div class="service-card bg-white rounded-lg shadow-lg p-8 fade-in">
                     <div class="text-purple-600 mb-4">
                         <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
@@ -144,7 +130,7 @@
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Diseño responsive
+                            Diseño responsive.
                         </li>
                         <!--li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
@@ -152,12 +138,11 @@
                         </!--li> -->
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            E-commerce y landing pages
+                            E-commerce y landing pages.
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Tarjeta: Aplicaciones de Escritorio -->
                 <div class="service-card bg-white rounded-lg shadow-lg p-8 fade-in">
                     <div class="text-purple-600 mb-4">
                         <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
@@ -171,20 +156,19 @@
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Multiplataforma
+                            Multiplataforma.
                         </li>
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Alta performance
+                            Alta performance.
                         </li>
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Interfaces intuitivas
+                            Interfaces intuitivas.
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Tarjeta: Inteligencia Artificial -->
                 <div class="service-card bg-white rounded-lg shadow-lg p-8 fade-in">
                     <div class="text-purple-600 mb-4">
                         <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
@@ -215,7 +199,6 @@
                     </ul>
                 </div>
                 
-                <!-- Tarjeta: Bots Inteligentes -->
                 <div class="service-card bg-white rounded-lg shadow-lg p-8 fade-in">
                     <div class="text-purple-600 mb-4">
                         <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
@@ -229,20 +212,19 @@
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Chatbots 24/7
+                            Chatbots 24/7.
                         </li>
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Automatización de tareas
+                            Automatización de tareas.
                         </li>
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Integración multicanal
+                            Integración multicanal.
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Tarjeta: Integración de Sistemas -->
                 <div class="service-card bg-white rounded-lg shadow-lg p-8 fade-in">
                     <div class="text-purple-600 mb-4">
                         <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
@@ -256,11 +238,11 @@
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            APIs personalizadas
+                            APIs personalizadas.
                         </li>
                         <li class="flex items-start">
                             <span class="text-purple-600 mr-2">✓</span>
-                            Sincronización de datos
+                            Sincronización de datos.
                         </li>
                         <!--
                         <li class="flex items-start">
@@ -274,19 +256,15 @@
         </div>
     </section>
     
-    <!-- Sección de Beneficios -->
     <section id="beneficios" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <!-- Título de la sección -->
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4 fade-in">¿Por Qué Elegirnos?</h2>
                 <p class="text-xl text-gray-600 fade-in">Nuestro compromiso con la excelencia</p>
             </div>
             
-            <!-- Grid de beneficios -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Beneficio 1 -->
                 <div class="text-center fade-in">
                     <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
@@ -297,7 +275,6 @@
                     <p class="text-gray-600">Desarrollos ágiles sin comprometer la calidad</p>
                 </div>
                 
-                <!-- Beneficio 2 -->
                 <div class="text-center fade-in">
                     <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
@@ -308,7 +285,6 @@
                     <p class="text-gray-600">Protección de datos y código seguro</p>
                 </div>
                 
-                <!-- Beneficio 3 -->
                 <div class="text-center fade-in">
                     <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
@@ -319,7 +295,6 @@
                     <p class="text-gray-600">Testing exhaustivo en cada proyecto</p>
                 </div>
                 
-                <!-- Beneficio 4 -->
                 <div class="text-center fade-in">
                     <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
@@ -334,102 +309,117 @@
         </div>
     </section>
     
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="py-20 bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+    <section id="contacto" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <!-- Título de la sección -->
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold mb-4 fade-in">Contáctanos</h2>
-                    <p class="text-xl fade-in">Estamos listos para llevar tu proyecto al siguiente nivel</p>
-                </div>
-                
-                <!-- Formulario de contacto -->
-                <form id="contact-form" class="bg-white rounded-lg shadow-2xl p-8 fade-in">
-                    <div class="grid md:grid-cols-2 gap-6 mb-6">
-                        <!-- Campo: Nombre -->
-                        <div>
-                            <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre</label>
-                            <input 
-                                type="text" 
-                                id="name" 
-                                name="name" 
-                                required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600 text-gray-800"
-                                placeholder="Tu nombre"
-                            >
-                        </div>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-0 shadow-2xl rounded-lg overflow-hidden fade-in">
+                    
+                    <div class="hero-gradient from-purple-600 to-purple-800 p-8 md:p-12">
+                        <h2 class="text-3xl font-bold text-white mb-8">Enviarnos un mensaje</h2>
                         
-                        <!-- Campo: Email -->
-                        <div>
-                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600 text-gray-800"
-                                placeholder="tu@email.com"
-                            >
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    class="w-full px-0 py-3 bg-transparent border-b-2 border-purple-400 text-white placeholder-purple-200 focus:outline-none focus:border-white transition"
+                                    placeholder="Nombre"
+                                >
+                            </div>
+                            
+                            <div>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    class="w-full px-0 py-3 bg-transparent border-b-2 border-purple-400 text-white placeholder-purple-200 focus:outline-none focus:border-white transition"
+                                    placeholder="Correo electrónico"
+                                >
+                            </div>
+                            
+                            <div>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    required
+                                    class="w-full px-0 py-3 bg-transparent border-b-2 border-purple-400 text-white placeholder-purple-200 focus:outline-none focus:border-white transition"
+                                    placeholder="Asunto"
+                                >
+                            </div>
+                            
+                            <div>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="4" 
+                                    required
+                                    class="w-full px-0 py-3 bg-transparent border-b-2 border-purple-400 text-white placeholder-purple-200 focus:outline-none focus:border-white transition resize-none"
+                                    placeholder="Mensaje"
+                                ></textarea>
+                            </div>
+                            
+                            <div class="pt-4">
+                                <button 
+                                    type="submit" 
+                                    class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition btn-ripple"
+                                >
+                                    Enviar mensaje
+                                </button>
+                            </div>
+                            
+                            <div id="success-message" class="hidden mt-6 p-4 bg-white bg-opacity-20 text-white rounded-lg text-center">
+                                ¡Gracias por contactarnos! Responderemos pronto.
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="bg-white p-8 md:p-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Contáctenos</h2>
+                        <p class="text-gray-600 mb-8">Estamos abiertos para cualquier sugerencia o simplemente para charlar</p>
+                        
+                        <div class="space-y-6">
+                            
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">Teléfono:</p>
+                                    <p class="text-gray-700">+57 3132713539</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">Correo electrónico:</p>
+                                    <p class="text-gray-700">info@allianz.com.co</p>
+                                </div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                     
-                    <!-- Campo: Servicio de interés -->
-                    <div class="mb-6">
-                        <label for="service" class="block text-gray-700 font-semibold mb-2">Servicio de Interés</label>
-                        <select 
-                            id="service" 
-                            name="service" 
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600 text-gray-800"
-                        >
-                            <option value="">Selecciona un servicio</option>
-                            <option value="automatizaciones">Automatizaciones</option>
-                            <option value="web">Páginas Web</option>
-                            <option value="escritorio">Aplicaciones de Escritorio</option>
-                            <option value="ia">Inteligencia Artificial</option>
-                            <option value="bots">Bots Inteligentes</option>
-                            <option value="integracion">Integración de Sistemas</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Campo: Mensaje -->
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            rows="5" 
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600 text-gray-800"
-                            placeholder="Cuéntanos sobre tu proyecto..."
-                        ></textarea>
-                    </div>
-                    
-                    <!-- Botón de envío -->
-                    <div class="text-center">
-                        <button 
-                            type="submit" 
-                            class="bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition btn-ripple"
-                        >
-                            Enviar Mensaje
-                        </button>
-                    </div>
-                    
-                    <!-- Mensaje de éxito (oculto por defecto) -->
-                    <div id="success-message" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-lg text-center">
-                        ¡Gracias por contactarnos! Responderemos pronto.
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Columna 1: Logo y descripción -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <!--
@@ -444,7 +434,6 @@
                     </p>
                 </div>
                 
-                <!-- Columna 2: Enlaces rápidos -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
                     <ul class="space-y-2">
@@ -455,11 +444,9 @@
                     </ul>
                 </div>
                 
-                <!-- Columna 3: Redes sociales -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Síguenos</h3>
                     <div class="flex space-x-4">
-                        <!-- Icono de Facebook -->
                         <a href="#" class="text-gray-400 hover:text-purple-400 transition" aria-label="Facebook">
                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -470,13 +457,11 @@
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
                         </a>
-                        <!-- Icono de WhatsApp -->
                         <a href="#" class="text-gray-400 hover:text-purple-400 transition" aria-label="WhatsApp">
                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                             </svg>
                         </a>
-                        <!-- Icono de Instagram -->
                         <a href="#" class="text-gray-400 hover:text-purple-400 transition" aria-label="Instagram">
                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -486,14 +471,12 @@
                 </div>
             </div>
             
-            <!-- Copyright -->
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2026 Allianz. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
     
-    <!-- Botón de scroll to top (aparece al hacer scroll) -->
     <button id="scroll-top" class="hidden fixed bottom-8 right-8 bg-purple-600 text-white p-4 rounded-full shadow-lg hover:bg-purple-700 transition z-50">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
