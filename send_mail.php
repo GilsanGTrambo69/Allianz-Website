@@ -1,5 +1,24 @@
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$host = $_ENV['MAIL_HOST'];
+$user = $_ENV['MAIL_USERNAME'];
+$pass = $_ENV['MAIL_PASSWORD'];
+$port = $_ENV['MAIL_PORT'];
+
+echo $host;
+
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $name    = htmlspecialchars(trim($_POST["name"]));
@@ -9,36 +28,49 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
-        echo "Correo electrónico inválido.";
+        echo "Correo inválido";
         exit;
     }
 
-    $to = "gilsanforero13@gmail.com";
+    $mail = new PHPMailer(true);
 
-    $email_subject = "Nuevo mensaje de contacto: " . $subject;
+    try {
+        $mail->isSMTP();
+        $mail->Host       = $_ENV['MAIL_HOST'];
+        $mail->Username   = $_ENV['MAIL_USERNAME'];
+        $mail->Password   = $_ENV['MAIL_PASSWORD'];
+        $mail->Port       = $_ENV['MAIL_PORT'];
 
-    $email_body = "
-    Has recibido un nuevo mensaje desde tu formulario web:
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
 
-    Nombre: $name
-    Correo: $email
-    Asunto: $subject
+        $mail->setFrom($_ENV['MAIL_USERNAME'], 'Formulario Web');
 
-    Mensaje:
-    $message
-    ";
+        $mail->addAddress($_ENV['MAIL_USERNAME'], 'Allianz Website');
 
-    $headers  = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        $mail->addReplyTo($email, $name);
 
-    if (mail($to, $email_subject, $email_body, $headers)) {
+        $mail->isHTML(true);
+        $mail->Subject = "Nuevo mensaje: " . $subject;
+
+        $mail->Body = "
+            <h2>Nuevo mensaje desde tu sitio web</h2>
+            <p><strong>Nombre:</strong> {$name}</p>
+            <p><strong>Email:</strong> {$email}</p>
+            <p><strong>Asunto:</strong> {$subject}</p>
+            <p><strong>Mensaje:</strong><br>{$message}</p>
+        ";
+
+        $mail->AltBody = "Nuevo mensaje\n\nNombre: $name\nEmail: $email\nAsunto: $subject\nMensaje: $message";
+
+        $mail->send();
+
         echo "success";
-    } else {
+    } catch (Exception $e) {
         http_response_code(500);
-        echo "Error al enviar el mensaje.";
+        echo "Error al enviar: {$mail->ErrorInfo}";
     }
 } else {
     http_response_code(403);
-    echo "Acceso no permitido.";
+    echo "Acceso no permitido";
 }

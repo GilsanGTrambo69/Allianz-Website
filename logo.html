@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+        <!-- Background circle -->
+        <circle cx="200" cy="200" r="195" fill="#0A0A1A" stroke="#705ebc" stroke-width="2"/>
+        
+        <!-- Background stars/dots -->
+        <circle cx="50" cy="50" r="2" fill="#705ebc" opacity="0.6"/>
+        <circle cx="80" cy="30" r="1.5" fill="#6a72d9" opacity="0.5"/>
+        <circle cx="120" cy="60" r="2.5" fill="#705ebc" opacity="0.7"/>
+        <circle cx="350" cy="70" r="2" fill="#6a72d9" opacity="0.6"/>
+        <circle cx="320" cy="40" r="1.5" fill="#705ebc" opacity="0.5"/>
+        <circle cx="370" cy="100" r="2.5" fill="#6a72d9" opacity="0.7"/>
+        <circle cx="60" cy="350" r="2" fill="#705ebc" opacity="0.6"/>
+        <circle cx="30" cy="320" r="1.5" fill="#6a72d9" opacity="0.5"/>
+        <circle cx="90" cy="370" r="2.5" fill="#705ebc" opacity="0.7"/>
+        <circle cx="340" cy="350" r="2" fill="#6a72d9" opacity="0.6"/>
+        <circle cx="370" cy="320" r="1.5" fill="#705ebc" opacity="0.5"/>
+        <circle cx="310" cy="370" r="2.5" fill="#6a72d9" opacity="0.7"/>
+        <circle cx="30" cy="200" r="1.5" fill="#705ebc" opacity="0.4"/>
+        <circle cx="370" cy="200" r="1.5" fill="#6a72d9" opacity="0.4"/>
+        <circle cx="150" cy="100" r="1.8" fill="#705ebc" opacity="0.5"/>
+        <circle cx="250" cy="90" r="1.5" fill="#6a72d9" opacity="0.6"/>
+        <circle cx="180" cy="70" r="2" fill="#705ebc" opacity="0.5"/>
+        <circle cx="220" cy="75" r="1.5" fill="#6a72d9" opacity="0.4"/>
+        <circle cx="70" cy="150" r="2" fill="#705ebc" opacity="0.5"/>
+        <circle cx="330" cy="160" r="1.8" fill="#6a72d9" opacity="0.6"/>
+        <circle cx="50" cy="250" r="2.5" fill="#705ebc" opacity="0.6"/>
+        <circle cx="350" cy="240" r="2" fill="#6a72d9" opacity="0.5"/>
+        <circle cx="100" cy="280" r="1.5" fill="#705ebc" opacity="0.4"/>
+        <circle cx="300" cy="290" r="2" fill="#6a72d9" opacity="0.5"/>
+        <circle cx="150" cy="320" r="1.8" fill="#705ebc" opacity="0.6"/>
+        <circle cx="250" cy="330" r="2.5" fill="#6a72d9" opacity="0.7"/>
+        <circle cx="40" cy="120" r="1.5" fill="#705ebc" opacity="0.5"/>
+        <circle cx="360" cy="280" r="2" fill="#6a72d9" opacity="0.6"/>
+        <circle cx="20" cy="180" r="1.8" fill="#705ebc" opacity="0.4"/>
+        <circle cx="380" cy="220" r="1.5" fill="#6a72d9" opacity="0.5"/>
+        
+        <!-- Saturn planet (main circle) -->
+        <defs>
+            <radialGradient id="planetGradient" cx="40%" cy="40%">
+            <stop offset="0%" style="stop-color:#8b7dd8;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#705ebc;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#5a4a9a;stop-opacity:1" />
+            </radialGradient>
+            
+            <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#8b7dd8;stop-opacity:0.3" />
+            <stop offset="30%" style="stop-color:#6a72d9;stop-opacity:0.8" />
+            <stop offset="50%" style="stop-color:#705ebc;stop-opacity:1" />
+            <stop offset="70%" style="stop-color:#6a72d9;stop-opacity:0.8" />
+            <stop offset="100%" style="stop-color:#8b7dd8;stop-opacity:0.3" />
+            </linearGradient>
+        </defs>
+        
+        <!-- Saturn's rings (back part) -->
+        <ellipse cx="200" cy="200" rx="145" ry="45" fill="none" stroke="url(#ringGradient)" stroke-width="8" opacity="0.6"/>
+        <ellipse cx="200" cy="200" rx="130" ry="40" fill="none" stroke="url(#ringGradient)" stroke-width="5" opacity="0.4"/>
+        
+        <!-- Saturn planet sphere -->
+        <circle cx="200" cy="200" r="70" fill="url(#planetGradient)"/>
+        
+        <!-- Planet details/texture -->
+        <ellipse cx="200" cy="185" rx="65" ry="12" fill="#5a4a9a" opacity="0.3"/>
+        <ellipse cx="200" cy="205" rx="60" ry="10" fill="#5a4a9a" opacity="0.2"/>
+        
+        <!-- Saturn's rings (front part) -->
+        <path d="M 80 200 Q 140 215 200 215 Q 260 215 320 200" 
+                fill="none" stroke="url(#ringGradient)" stroke-width="8" opacity="0.9"/>
+        <path d="M 90 200 Q 145 213 200 213 Q 255 213 310 200" 
+                fill="none" stroke="url(#ringGradient)" stroke-width="5" opacity="0.7"/>
+        
+        <!-- Company name -->
+        <text x="200" y="310" font-family="Arial, sans-serif" font-size="42" font-weight="bold" 
+                fill="#705ebc" text-anchor="middle" letter-spacing="4">ALLIANZ</text>
+        
+        <!-- Tagline -->
+        <text x="200" y="335" font-family="Arial, sans-serif" font-size="12" 
+                fill="#8b7dd8" text-anchor="middle" letter-spacing="2">SOFTWARE DEVELOPMENT</text>
+        
+        <!-- Decorative orbit dots -->
+        <circle cx="130" cy="145" r="3" fill="#705ebc" opacity="0.8"/>
+        <circle cx="270" cy="145" r="3" fill="#6a72d9" opacity="0.8"/>
+        <circle cx="105" cy="185" r="2.5" fill="#8b7dd8" opacity="0.6"/>
+        <circle cx="295" cy="185" r="2.5" fill="#6a72d9" opacity="0.6"/>
+    </svg>
+</body>
+</html>
+
+

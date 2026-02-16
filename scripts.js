@@ -41,25 +41,24 @@ document.addEventListener('DOMContentLoaded', function() {
     
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            service: document.getElementById('service').value,
-            message: document.getElementById('message').value
-        };
-        
 
-        console.log('Datos del formulario:', formData);
-        
-        successMessage.classList.remove('hidden');
-        
-        contactForm.reset();
-        
-        setTimeout(function() {
-            successMessage.classList.add('hidden');
-        }, 5000);
+        const formData = new FormData(contactForm);
+
+        fetch('send_mail.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+            successMessage.classList.remove('hidden');
+            contactForm.reset();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     });
+
     
     
 
